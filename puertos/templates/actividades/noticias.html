@@ -1,0 +1,12 @@
+<ion-view>    
+  <ion-content>
+      <div class="list">
+
+    <a ng-repeat='noticia in noticias' class="item item-thumbnail-left" ng-click="noticiaDetalle({{noticia.id}})">
+      <img ng-src="{{noticia.imagen}}">
+      <h2>{{noticia.titulo}}</h2>
+      <p>{{noticia.cuerpo}}</p>
+    </a>
+</div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,14 @@
+<ion-view>    
+  <ion-content class="top2">
+        <div id="photos">
+            <div ng-repeat="media in medias">
+                <div ng-if="media.tipo == 'video'">
+                   <iframe width="420" height="345" ng-src="//www.youtube.com/embed/QsNwjOEkqaQ"></iframe>
+                </div>
+                <div ng-if="media.tipo != 'video'">
+                    <a href="#/tab/mipuerto/puerto-videos-foto/{{media.id}}"><img src="{{media.src}}" width="100"></a>
+                </div>
+            </div>
+      </div>  
+  </ion-content>
+</ion-view>

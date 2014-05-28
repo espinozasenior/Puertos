@@ -1,0 +1,19 @@
+<ion-view>    
+  <ion-content has-header="true" has-subheader="true">
+    <div class="bar item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios7-search placeholder-icon"></i>
+            <input id="palabrasBusqueda" type="search" placeholder="Buscar" ng-value="palabrasBusqueda" autocorrect="off" >
+            <button class="button button-clear" ng-click="clearSearch()">X</button>
+        </label>
+        <button class="button button-clear" ng-click="search()">Buscar</button>
+    </div>
+     <div class="list">
+
+         <a class="item" ng-repeat="empresa in directorio" href="#/tab/mipuerto/servicios/directorio-emp/{{empresa.id}}">
+      <h2>{{empresa.name}}</h2>
+      <p>{{empresa.actividad}}</p>
+    </a>
+    </div> 
+  </ion-content>
+</ion-view>

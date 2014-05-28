@@ -1,0 +1,18 @@
+<ion-view> <ion-content padding="true">
+<section  class="noticia">
+	<img style="clear: both; float: left; padding: 0;"
+	    class="item item-thumbnail-left"
+		ng-src="{{ noticia.imagen }}"
+		title="{{ noticia.titulo }}" />
+
+     <p >{{ noticia.titulo}}</p>
+     <p ></p>
+     <p >{{ noticia.cuerpo}}</p>
+   
+	<div class="row">
+		<hr>
+		<p>{{noticia.creacion}}</p>
+		
+	</div>
+</section>
+</ion-content> </ion-view>

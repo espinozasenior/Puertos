@@ -1,0 +1,60 @@
+<ion-side-menus>
+       <ion-side-menu-content>
+          <ion-nav-bar class="bar-positive">
+            <div class="juntalogo"><img src="img/logofw.png"  alt=""/></div>
+          </ion-nav-bar>
+        <div class="bar bar-subheader">
+            <button class="button button-icon ion-chevron-left" ng-click="goBack()">
+            </button> 
+            <h1 class="title">{{cityCurrent}}</h1>
+              <button class="button button-icon ion-navicon" ng-click="toggleRight()">
+            </button>       
+        </div>
+               
+          <ion-nav-view name="mainContent"></ion-nav-view>
+    
+    <ion-tabs class="tabs-icon-top">
+
+        <!-- Avisos Tab -->
+        <ion-tab title="Avisos" icon="icon ion-alert-circled" href="#/tab/avisos">
+            <ion-nav-view name="mainContent"></ion-nav-view>
+        </ion-tab>
+
+        <!-- Puerto Tab -->
+        <ion-tab title="Puertos" icon="icon ion-location" href="#/tab/mipuerto/info">
+            <ion-nav-view name="mainContent"></ion-nav-view>
+        </ion-tab>
+
+        <!-- Meteo Tab -->
+        <ion-tab title="Meteo" icon="icon ion-cloud" href="#/tab/meteo">
+            <ion-nav-view name="mainContent"></ion-nav-view>
+        </ion-tab>
+        <!-- Actividades Tab -->
+        <ion-tab title="Actividades" icon="ion-clipboard" href="#/tab/actividades">
+          <ion-nav-view name="mainContent"></ion-nav-view>
+        </ion-tab>
+        <!-- Ajustes Tab -->
+        <ion-tab title="Ajustes" icon="ion-gear-b" href="#/tab/ajustes">
+          <ion-nav-view name="mainContent"></ion-nav-view>
+        </ion-tab>
+        <!-- Ajustes Tab -->
+        <ion-tab title="Ajustes" icon="ion-gear-b" href="#/tab/ajustes">
+          <ion-nav-view name="mainContent"></ion-nav-view>
+        </ion-tab>
+      </ion-tabs>
+        </ion-side-menu-content> 
+        
+        <ion-side-menu side="right">
+          <ion-header-bar class="bar-positive right">         
+          </ion-header-bar>
+ 
+          <ion-content>
+            <ul class="list list-sinflecha">
+              <a ng-click="toggleRight()" href="#/tab/meteo" class="item">Meteorología</a>
+              <a ng-click="toggleRight()" href="#/event/attendees" class="item">Información</a>
+              <a ng-click="toggleRight()" href="#/tab/actividades" class="item">Actividades</a>
+            </ul>
+          </ion-content>
+        </ion-side-menu>
+        
+      </ion-side-menus>
